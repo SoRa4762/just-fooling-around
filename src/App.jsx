@@ -22,6 +22,7 @@ const App = () => {
       socket.emit("message", message);
       setMessage("");
     }
+    console.log("Received Messages: ", messages);
   };
 
   return (

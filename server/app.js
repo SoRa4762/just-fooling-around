@@ -24,6 +24,7 @@ io.on("connection", (socket) => {
   socket.on("message", (data) => {
     console.log("Message received:", data);
     io.emit("message", data); // Broadcast message to all connected clients
+    // socket.emit("message", data); // What does it do?
   });
 
   socket.on("disconnect", () => {
