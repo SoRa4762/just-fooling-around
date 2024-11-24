@@ -28,7 +28,7 @@ const App = () => {
     };
   }, []);
 
-  const registerUser = () => {
+  const registerUser = () => { 
     if (usernameInput.trim()) {
       socket.emit("register", usernameInput); // Notify the server of the new username
     } else {
